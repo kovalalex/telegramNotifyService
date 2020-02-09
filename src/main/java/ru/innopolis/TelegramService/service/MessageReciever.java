@@ -1,4 +1,4 @@
-package ru.innopolis.telegramService.service;
+package ru.innopolis.TelegramService.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,8 +9,8 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
-import ru.innopolis.telegramService.TelegramBot;
-import ru.innopolis.telegramService.exceptions.UserIdNotEqualsException;
+import ru.innopolis.TelegramService.TelegramBot;
+import ru.innopolis.TelegramService.exceptions.UserIdNotEqualsException;
 
 import java.util.Collections;
 
@@ -72,10 +72,12 @@ public class MessageReciever implements Runnable {
     }
 
     private void analyzeCommand(Message message) {
+        log.debug("AnalyzeCommand :" + message);
     }
 
     private boolean checkChatIdInAuthService(long chatId) {
         //todo Ищем пользователя по чат id
+        log.debug("Find user with chatId: " + chatId);
         return false;
     }
 

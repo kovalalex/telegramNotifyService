@@ -1,11 +1,11 @@
-package ru.innopolis.telegramService.service;
+package ru.innopolis.TelegramService.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import ru.innopolis.telegramService.TelegramBot;
+import ru.innopolis.TelegramService.TelegramBot;
 
 /**
  * Класс MessageSender

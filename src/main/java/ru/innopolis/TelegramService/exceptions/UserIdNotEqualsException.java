@@ -1,4 +1,4 @@
-package ru.innopolis.telegramService.exceptions;
+package ru.innopolis.TelegramService.exceptions;
 
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 

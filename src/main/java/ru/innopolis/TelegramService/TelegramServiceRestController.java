@@ -1,4 +1,4 @@
-package ru.innopolis.telegramService;
+package ru.innopolis.TelegramService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,11 +16,11 @@ import java.util.Map;
  * @author Александр Коваленко
  */
 @RestController
-public class telegramServiceRestController {
+public class TelegramServiceRestController {
     public TelegramBot telegramBot;
 
     @Autowired
-    public telegramServiceRestController(TelegramBot telegramBot) {
+    public TelegramServiceRestController(TelegramBot telegramBot) {
         this.telegramBot = telegramBot;
     }
 
