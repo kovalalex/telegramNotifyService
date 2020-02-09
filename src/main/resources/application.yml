@@ -1,0 +1,3 @@
+logging:
+  level:
+    ru.innopolis.telegramService: DEBUG
